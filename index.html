@@ -107,8 +107,17 @@
                 <input type="text" name="nom" placeholder="Ex: Domaines Agricoles Atlas" required>
             </div>
             <div class="field">
-                <label>Numéro WhatsApp (Urgent)</label>
+                <label>Numéro téléphone (Urgent)</label>
                 <input type="tel" name="telephone" placeholder="06 XX XX XX XX" required>
+            </div>
+            <div class="field">
+                <label>Surface</label>
+                <select name="surface" required>
+                    <option value="">Sélectionnez...</option>
+                    <option>moins de 4000m²</option>
+                    <option>entre  4000m² et  10000m²</option>
+                    <option>plus de 10000m²</option>
+                </select>
             </div>
             <div class="field">
                 <label>Type de Culture</label>
@@ -120,9 +129,14 @@
                     <option>Cannabis Médical</option>
                 </select>
             </div>
-            <div class="field">
-                <label>Région d'Exploitation</label>
-                <input type="text" name="region" placeholder="Ex: Agadir, Souss-Massa, France Sud..." required>
+           <div class="field">
+                <label>Créneau de disponibilité</label>
+                <select name="dispo_heure" required>
+                    <option value="">Sélectionnez...</option>
+                    <option>Matin (Entre 08h et 12h)/option>
+                    <option>Après-midi (14h - 18h)</option>
+                    <option>Soir (18h - 20h)</option>
+                </select>
             </div>
             <button type="submit" class="cta-btn">Demander mon Devis Pro →</button>
         </form>
